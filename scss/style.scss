@@ -1,0 +1,109 @@
+@import 'reset';
+@import 'variable';
+@import 'icon';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: $primary-font, sans-serif;
+}
+
+header {
+    .top {
+        background-color: $second-color;
+        color: #eee;
+        text-align: center;
+        font-size: 0.7rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 16px 0;
+
+        .logo {
+            img {
+                height: 70px;
+                width: auto;
+            }
+        }
+
+        .middle-right,
+        .middle-left {
+            width: 10%;
+        }
+
+        .middle-left {
+            i {
+                margin: 0 4px;
+            }
+        }
+    }
+
+
+
+    nav {
+        .active {
+            border-bottom: 2px solid black;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>li {
+                margin-right: 16px;
+            }
+
+            &>li>a {
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
+                padding: 16px 0;
+            }
+
+
+            .sub-menu {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .content {
+                    position: absolute;
+                    top: 52px;
+                    min-width: 120px;
+                    display: none;
+                    border-top: 2px solid #eee;
+
+                    li {
+                        border-bottom: 1px solid #eee;
+                        padding: 9px 0;
+                    }
+
+                    li a {
+                        font-weight: normal;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        display: block;
+
+                    }
+
+                }
+
+                &:hover {
+                    .content {
+                        display: block;
+                    }
+                }
+
+            }
+
+            li>a:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

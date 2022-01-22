@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Quicksand:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.search {
+    background-image: url("icon/search_black_24dp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.user {
+    background-image: url("icon/person_black_24dp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.cart {
+    background-image: url("icon/shopping_bag_black_24dp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.more {
+    background-image: url("icon/expand_more_black_24dp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+.less {
+    background-image: url("icon/expand_less_black_24dp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+header .top {
+    background-color: #FDBC0E;
+    color: #eee;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+header .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+
+header .middle .logo img {
+    height: 70px;
+    width: auto;
+}
+
+header .middle .middle-right,
+header .middle .middle-left {
+    width: 10%;
+}
+
+header .middle .middle-left i {
+    margin: 0 4px;
+}
+
+header nav .active {
+    border-bottom: 2px solid black;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .menu>li {
+    margin-right: 16px;
+}
+
+header nav .menu>li>a {
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 16px 0;
+}
+
+header nav .menu .sub-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu .sub-menu .content {
+    position: absolute;
+    top: 52px;
+    min-width: 120px;
+    display: none;
+    border-top: 2px solid #eee;
+}
+
+header nav .menu .sub-menu .content li {
+    border-bottom: 1px solid #eee;
+    padding: 9px 0;
+}
+
+header nav .menu .sub-menu .content li a {
+    font-weight: normal;
+    font-size: 14px;
+    white-space: nowrap;
+    display: block;
+}
+
+header nav .menu .sub-menu:hover .content {
+    display: block;
+}
+
+header nav .menu li>a:hover {
+    color: #FCCD03;
+}
+
+/*# sourceMappingURL=style.css.map */
